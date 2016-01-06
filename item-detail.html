@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="loading">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="keywords" content="城小二 洗衣" />
+<meta name="description" content="城小二洗衣 ">
+<meta name="author" content="城小二" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+
+<title>城小二</title>
+</head>
+
+<body>
+
+
+
+<div id="header">
+      <div class="wrap"> 
+      	<i class="menu_back"><a href="shop.html"></a></i>
+        <div class="page-title">西装快速干洗</div>
+        <a href="#"><i class="tit-kefu"></i></a></div>
+      <div class="logo_msk"></div>
+    </div>
+<div id="container">
+  <!--banner begin-->
+    <div class="banner "> 
+      <!--start img slider-->
+      <div class="slide" id="slide4">
+        <ul>
+            <li><img src="images/itemimg/1.jpg" alt=""></li>
+            <li><img src="images/itemimg/2.jpg" alt=""></li>
+            <li><img src="images/itemimg/3.jpg" alt=""></li>  
+        </ul>
+        <div class="dot">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+      <!--end img slider--> 
+    </div>
+<!--bannner end-->
+  <div id="content">
+  	<div class="detail-quantity-wrap">
+    	<div class="quantity-wrap clear">
+            <b class="quantity-reduce fl"></b>
+            <input type="text" class="quantity-show fl" placeholder="0">
+            <b class="quantity-add fl"></b>
+        </div>
+        <div class="list_price">¥38.00<span>原价58</span></div>
+    </div>
+    <div class="item-intro">
+    	<h1 class="item-intro-tit">商品介绍</h1>
+        <div class="item-intro-detail">
+        	<p>商品介绍商品介绍商品介绍,商品介绍品介绍品介绍品介绍商品介绍。商品介绍商品介绍商品介绍，商品介绍商品介绍商品介绍。</p>
+            <p>商品介绍商品介绍商品介绍,商品介品介绍品介绍品介绍绍。</p>
+            <p>商品介绍商品介绍商品介绍,商品介绍品介绍品介绍品介绍商品介绍。商品介绍商品介绍商品介绍，商品介绍商品介绍商品介绍。</p>
+            <p>商品介绍商品介绍商品介绍,商品介品介绍品介绍品介绍绍。</p>
+        </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+<!--底部菜单-->
+<div id="us_panel2">
+		<table width="100%" height="100%" cellspacing="0" border="0">
+			<tr>
+				<td class="bottom-total">数量3<span>¥155.00</span></td>				
+				<td class="btn-order-wrap"><a class="btn-order" href="confirm-order-2.html">立即下单</a></td>
+			</tr>
+		</table>
+</div>
+<!-- end 底部菜单 -->
+
+<div class="loading_dark"></div>
+<div id="loading_mask">
+  <div class="loading_mask">
+    <ul class="anm">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+<script language="javascript" src="js/zepto.min.js"></script>
+<script language="javascript" src="http://ons.me/wp-content/uploads/2014/09/swipeSlide/js/swipeSlide.min.js"></script>
+<script language="javascript" src="js/fx.js"></script>
+<script language="javascript" src="js/script.js"></script>
+<script>
+	$(document).ready(function(e) {	
+	//slider    
+    $('#slide4').swipeSlide({
+        continuousScroll:true,
+        speed :6000,
+        transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+        callback : function(i){
+            $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        }
+    });
+	$("#slide4").height($("#slide4").width());
+});  
+</script>
+</body>
+
+</html>

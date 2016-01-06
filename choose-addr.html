@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="loading">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="keywords" content="城小二 洗衣" />
+<meta name="description" content="城小二洗衣 ">
+<meta name="author" content="城小二" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+
+<title>城小二</title>
+</head>
+
+<body>
+	<div id="header">
+      <div class="wrap"> 
+      	<i class="menu_back"><a href="#" onclick="history.go(-1)"></a></i>
+        <div class="page-title">选择收货地址</div>
+        <a href="#"><i class="tit-kefu"></i></a></div>
+      <div class="logo_msk"></div>
+    </div>
+	
+	
+	<div id="container">
+		<div id="content" class="choose-addr"> 
+           <div class="clear"><a href="my-addr.html" class="fr btn-login bc-blue" style="display:block; line-height:30px; width:130px; height:30px; text-align:center; margin-right:10px">管理我的地址</a></div>
+           <div class="addr-wrap choosed">           		
+				<span class="addr-name">王二小</span>
+                <span class="addr-phone">13888221454</span>
+                <span class="addr-detail">四川成都成华区一环路南三段64号7-80</span>
+           </div>
+           <div class="addr-wrap">
+				<span class="addr-name">王二小</span>
+                <span class="addr-phone">13888221454</span>
+                <span class="addr-detail">四川成都成华区一环路南三段64号7-80</span>
+           </div>
+            <div class="addr-wrap">
+				<span class="addr-name">王二小</span>
+                <span class="addr-phone">13888221454</span>
+                <span class="addr-detail">四川成都成华区一环路南三段64号7-80</span>
+           </div>
+            
+           <div class="bottom-wrap">
+               <span class="bottom-tip-link" style="color:#666; font-size:12px">客服电话：4006766553</span>               
+           </div> 
+	  </div>
+    </div>
+	
+	
+	<div class="loading_dark"></div>
+	<div id="loading_mask">
+		<div class="loading_mask">
+			<ul class="anm">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<script language="javascript" src="js/zepto.min.js"></script>
+	<script language="javascript" src="js/fx.js"></script>
+	<script language="javascript" src="js/script.js"></script>
+	<script>
+		$(document).ready(function(e) {
+            $(".choose-addr .addr-wrap").click(function(e) {
+                $(this).addClass("choosed").siblings().removeClass("choosed");
+            });
+        });
+	</script>
+</body>
+</html>

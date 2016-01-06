@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="loading">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="keywords" content="城小二 洗衣" />
+<meta name="description" content="城小二洗衣 ">
+<meta name="author" content="城小二" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+
+<title>城小二</title>
+</head>
+<body>
+<div id="header">
+  <div class="wrap"> 
+    <div class="page-title">我的订单</div>
+   </div>
+  <div class="logo_msk"></div>
+</div>
+<div id="container">
+  <div id="content">
+    <div id="list" class="myorder">
+      <ul>
+        <li>
+          <div class="wrap">
+            <div class="order-state bc-gray">已完成</div>            
+          	<div class="order-info"><span class="order-time fl">2015-09-13&nbsp;&nbsp;13:39</span><span class="order-time fr">订单号：21447845645</span></div>
+            <div class="list_litpic fl"><img src="images/shoplogo/shop-logo-1.jpg" /></div>
+            <div class="list_info">              
+              <h4>城小二洗衣店</h4>
+              <div class="order-price">¥63.00</div>
+            </div>
+            <div class="clear"></div>
+           </div>
+        </li>
+         <li>
+          <div class="wrap">
+            <div class="order-state">已快递</div>
+          	<div class="order-info"><span class="order-time fl">2015-09-13&nbsp;&nbsp;13:39</span><span class="order-time fr">订单号：21447845645</span></div>
+            <div class="list_litpic fl"><img src="images/shoplogo/shop-logo-1.jpg" /></div>
+            <div class="list_info">              
+              <h4>城小二洗衣店</h4>
+              <div class="order-price">¥63.00</div>
+            </div>
+            <div class="clear"></div>
+            </div>
+        </li>
+         <li>
+          <div class="wrap">
+            <div class="order-state bc-green">处理中</div>
+          	<div class="order-info"><span class="order-time fl">2015-09-13&nbsp;&nbsp;13:39</span><span class="order-time fr">订单号：21447845645</span></div>
+            <div class="list_litpic fl"><img src="images/shoplogo/shop-logo-1.jpg" /></div>
+            <div class="list_info">              
+              <h4>城小二洗衣店</h4>
+              <div class="order-price">¥63.00</div>
+            </div>
+            <div class="clear"></div>
+            </div>
+        </li>
+         <li>
+          <div class="wrap">
+            <div class="order-state bc-gray">已完成</div>
+          	<div class="order-info"><span class="order-time fl">2015-09-13&nbsp;&nbsp;13:39</span><span class="order-time fr">订单号：21447845645</span></div>
+            <div class="list_litpic fl"><img src="images/shoplogo/shop-logo-1.jpg" /></div>
+            <div class="list_info">              
+              <h4>城小二洗衣店</h4>
+              <div class="order-price">¥63.00</div>
+            </div>
+            <div class="clear"></div>
+            </div>
+        </li>
+         <li>
+          <div class="wrap">
+            <div class="order-state">已快递</div>
+          	<div class="order-info"><span class="order-time fl">2015-09-13&nbsp;&nbsp;13:39</span><span class="order-time fr">订单号：21447845645</span></div>
+            <div class="list_litpic fl"><img src="images/shoplogo/shop-logo-1.jpg" /></div>
+            <div class="list_info">              
+              <h4>城小二洗衣店</h4>
+              <div class="order-price">¥63.00</div>
+            </div>
+            <div class="clear"></div>
+            </div>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+
+</div>
+
+<!--底部菜单-->
+<div id="us_panel2">
+		<table width="100%" height="100%" cellspacing="0" border="0">
+			<tr>
+				<td class="us_panel_fujin"><a href="index.html"><i></i><span>附近</span></a></td>
+				<td class="us_panel_dingdan"><a href="my-orders.html"><i></i><span>订单</span></a></td>
+				<td class="us_panel_mine"><a href="my-center.html"><i></i><span>我的</span></a></td>
+			</tr>
+		</table>
+</div>
+<!-- end 底部菜单 -->
+
+<div class="loading_dark"></div>
+<div id="loading_mask">
+  <div class="loading_mask">
+    <ul class="anm">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
+<script language="javascript" src="js/zepto.min.js"></script>
+<script language="javascript" src="http://ons.me/wp-content/uploads/2014/09/swipeSlide/js/swipeSlide.min.js"></script>
+<script language="javascript" src="js/fx.js"></script>
+<script language="javascript" src="js/script.js"></script>
+<script>
+	$(document).ready(function(e) {	
+	//slider    
+    $('#slide3').swipeSlide({
+        continuousScroll:true,
+        speed :6000,
+        transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+        callback : function(i){
+            $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        }
+    });
+	$("#slide3").height($("#slide3").width()/3.38);
+});  
+</script>
+</body>
+
+</html>
